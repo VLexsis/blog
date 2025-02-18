@@ -17,8 +17,9 @@
 
 .autorzationsContainer {
   display: flex;
-  gap: 16px; /* Отступ между ссылками */
+  gap: 22px; /* Отступ между ссылками */
 }
+
 .link {
   color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
@@ -28,16 +29,15 @@
   line-height: 28px;
   margin-left: 35px;
   padding: 8px 16px; /* Отступы для текста */
+  border: none; /* Убираем стандартные стили кнопки */
+  background: none; /* Убираем стандартный фон кнопки */
+  cursor: pointer; /* Указатель при наведении */
 
   &:hover {
     color: rgb(82, 196, 26);
     border: 1px solid rgb(82, 196, 26);
     border-radius: 5px;
     box-sizing: border-box;
-
-    display: flex; /* Делаем ссылку flex-контейнером */
-    justify-content: center; /* Выравниваем текст по горизонтали */
-    align-items: center; /* Выравниваем текст по вертикали */
   }
 }
 
@@ -48,15 +48,47 @@
   font-weight: 400;
   letter-spacing: 0%;
   line-height: 28px;
+  padding: 8px;
+
   &:hover {
     color: rgb(82, 196, 26);
     border: 1px solid rgb(82, 196, 26);
     border-radius: 5px;
     box-sizing: border-box;
-
-    height: 51px;
-    display: flex; /* Делаем ссылку flex-контейнером */
-    justify-content: center; /* Выравниваем текст по горизонтали */
-    align-items: center; /* Выравниваем текст по вертикали */
   }
+}
+
+.avatarLink {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+  letter-spacing: 0%;
+  gap: 22px;
+}
+
+.avatarLink img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%; /* Круглая форма аватара */
+}
+
+.logOutButton {
+  position: relative;
+  margin-right: 7px;
+  top: 5px;
+  width: 109px;
+  height: 51px;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
 }
